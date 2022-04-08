@@ -1,17 +1,47 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="tertiary">
     <ion-title>
-      Tab 1
+      Profile
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-content class="fondologin">
+  <ion-card>
+    <ion-avatar>
+      <img src="assets/image/photo10.jpg">
+    </ion-avatar>  
+  <div class="card-title">Jessa Mae Cabelin</div>
+  <div class="card-title">A Future Photographer</div>
+</ion-card>
+
+<ion-list>
+  <ion-item>
+    <ion-icon name="book" slot="start"></ion-icon>
+    <ion-label><h4>Studied Bachelor of Science in Information Tachnology at Eastern Visayas State University - Carigara Campus</h4></ion-label>
+  </ion-item>
+</ion-list>
+
+<ion-list>
+  <ion-item>
+    <ion-icon name="headset-outline" slot="start"></ion-icon>
+    <ion-label>I do love listening sweet music</ion-label>
+  </ion-item>
+</ion-list>
+
+<ion-list>
+  <ion-item>
+    <ion-icon name="location" slot="start"></ion-icon>
+    <ion-label>From Brgy. Hiagsam Jaro, Leyte</ion-label>
+  </ion-item>
+</ion-list>
+
+<ion-list>
+  <ion-item>
+    <ion-icon name="heart" slot="start"></ion-icon>
+    <ion-label>Single</ion-label>
+  </ion-item>
+</ion-list>
+
 </ion-content>
