@@ -1,6 +1,6 @@
 import { Component} from '@angular/core';
 import { AlertController, ToastController } from '@ionic/angular';
-
+import { Router } from '@angular/router';
 
 
 
@@ -22,7 +22,7 @@ export class Tab3Page {
 
 
 
-  constructor(public alertController: AlertController, public toastController: ToastController ) {
+  constructor(public alertController: AlertController, public toastController: ToastController, private route: Router  ) {
   }
   async  confirmation(index: number) {
     const alert = await this.alertController.create({
@@ -129,6 +129,10 @@ export class Tab3Page {
    
 
     (await toast).present();
+  }
+  
+  async sendMessage(){ 
+    this.route.navigate(['message']);
   }
 
 
